@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: timefall-2126
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
